@@ -242,7 +242,7 @@ section {
     position: absolute;
     top: -10%;
     left: 1rem;
-    background-color: #6A3093;
+    background-color: var(--color-secundary);
     color: #FFF;
     padding: .7rem;
     border-radius: 5px;
@@ -250,7 +250,7 @@ section {
 
 input[type=number]{
     padding: .5rem;
-    background-color: #949494;
+    background-color: #c28bea;
     color: var(--color-default);
     border: none;
     border-radius: .3rem;
