@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="hamburguer">
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+    </div>
+
+    <div class="logo">
+        <img src="./assets/imagens/Logo_Girl_Up_SP_2023-removebg-preview.png" alt="GUSP" id="Logo">
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#secao-apresentacao">
+                    <i class="fa-solid fa-user"></i>
+                    Quem Somos
+                </a>
+            </li>
+            <li>
+                <a href="#secao-projetos">
+                    <i class="fa-solid fa-calendar"></i>
+                    Eventos
+                </a>
+            </li>
+            <li>
+                <a href="#secao-orcamento">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    Inscrição
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <header>
+        <h1>Girl Up Somos Plurais</h1>
+        <a href="#secao-apresentacao" class="botao">saiba mais</a>
+    </header>
+
+    <section id="secao-apresentacao">
+        <img class="avatar large-only" src="./assets/imagens/GirlUP SP .jpg" alt="avatar">
+        <div id="texto-apresentacao">
+            <h2>Quem Somos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel porro nesciunt sed minus quos
+                eligendi
+                atque iste rem sunt, quisquam non odio magni numquam esse cumque quidem ea dicta.</p>
+            <a href="#secao-projetos" class="botao">inscreva-se</a>
+        </div>
+    </section>
+
+    <section id="secao-projetos">
+        <h2>Eventos</h2>
+        <div>
+            <ul>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/imagens/MicrosoftTeams-image (1).png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Aula de Defesa Pessoal Beneficiente - Dia 16/07</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/imagens/MicrosoftTeams-image (2).png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Encontro Seu Voto Importa Fase 2 - Dia 22/05</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-image">
+                        <img src="./assets/imagens/MicrosoftTeams-image (5).png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Guerapezinhas na Globo - Dia 10/02 as 19h</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="secao-orcamento">
+        <form action="">
+            <h3>Orçamento</h3>
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+
+            <label for="js">Precisa de JS?</label>
+            <input type="checkbox" id="js">
+
+            <label for="layout">Precisa de Layout?</label>
+            <div>
+                <input type="radio" id="layout_sim" name="layout">
+                <label for="layout_sim">Sim, preciso de layout</label>
+
+                <input type="radio" id="layout_nao" name="layout">
+                <label for="layout_nao">Não, já tenho</label>
+            </div>
+
+            <label for="prazo" id="label_prazo">Prazo</label>
+            <input type="range" id="prazo" min="1" max="10">
+
+            <output id="output">R$ 100,00</output>
+        </form>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/menu.js"></script>
+</body>
+
+</html>

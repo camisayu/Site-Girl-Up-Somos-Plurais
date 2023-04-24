@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%; /*10px / 16px */
+    --font-default: 'JetBrains Mono';
+    --color-default: #FFF;
+    --color-secundary: #854FC9;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--font-default);
+    background-image: linear-gradient(112.9deg, #BA9FDD 0%, #7FC1EB 100%);
+}
+
+.hamburguer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2.4rem;
+    width: 2.4rem;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#Logo{
+    height: 7rem;
+    width: 9rem;
+}
+
+
+
+.linha{
+    height: .5rem;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.menu{
+    height: 25rem;
+    width: 20rem;
+    position: fixed;
+    right: -20rem;
+    background-image: linear-gradient(112.9deg, #BA9FDD 0%, #7FC1EB 0%);
+    z-index: 9;
+    transition: right 1s;
+    font-size: 1.8rem;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--color-secundary);
+}
+.menu a:hover{
+    color: #6A3093;
+}
+
+.menu ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    gap: 1.6rem
+}
+
+.menu li{
+    list-style: none;
+}
+
+
+
+.show-menu{
+    right: 0;
+}
+
+header{
+    display: flex; /*flexbox*/
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    height: 100vh;
+    background-image: url('../imagens/MicrosoftTeams-image.png');
+    background-size: cover;
+    color: var(--color-default);
+    /* shorthand */
+    padding: 11rem 11rem;
+   
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: var(--font-heading);
+    font-weight: 900;   
+}
+
+h1 {
+    font-size: clamp(3rem, 5vw, 6rem);
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-size: 4.4rem;
+    color: var(--color-secundary);
+}
+
+p{
+    font-size: 3rem;
+    color: var(--color-default);
+}
+
+.botao{
+    padding: 1.2rem 6rem;
+    background: linear-gradient(90deg, #6A3093 0%, #A044FF 100%);
+    border-radius: 10px;
+    font-size: 3rem;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    gap: 2rem;
+    padding: 9.6rem;
+}
+
+.avatar {
+    border-radius: 8%;
+    width: 300px;
+    height: 300px;
+    animation: zoom 10s ease-in-out;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#texto-apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+#secao-projetos{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+#secao-projetos ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+#secao-projetos li{
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+#secao-projetos h3{
+    font-size: 2rem;
+    color: var(--color-default);
+}
+
+.card-image img{
+    width: 287px;
+    height: 277px;
+    border-radius: 10px;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity .5s, bottom .5s;
+    padding: 1rem;
+}
+
+.card-info h4{
+    color: #c36eff;
+}
+
+#secao-projetos li:hover .card-info{
+    opacity: 1;
+    bottom: 20%;
+}
+
+#secao-projetos li:hover .card-image img{
+    opacity: .5;
+}
+
+#secao-orcamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#secao-orcamento form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    row-gap: 1rem;
+    padding: 4rem 2rem;
+    background-color: #FFF;
+    border-radius: 10px;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+#secao-orcamento output{
+    grid-column: 2;
+}
+
+#secao-orcamento h3{
+    position: absolute;
+    top: -10%;
+    left: 1rem;
+    background-color: #6A3093;
+    color: #FFF;
+    padding: .7rem;
+    border-radius: 5px;
+}
+
+input[type=number]{
+    padding: .5rem;
+    background-color: #949494;
+    color: var(--color-default);
+    border: none;
+    border-radius: .3rem;
+}
+
+@media (max-width: 900px) {
+    #secao-projetos ul{
+        flex-direction: column;
+    }
+    .large-only{
+        display: none;
+    }
+    #secao-orcamento form{
+        grid-template-columns: 1fr;
+    }
+}
