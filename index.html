@@ -122,6 +122,9 @@
                 <label for="lugar_não">Não, infelizmente não tenho disponibilidade</label>
             </div>
 
+            <label for="contato">Contato</label>
+            <input type="tel" id="contato">
+
             <label for="engajamento">Você ja participou de alguma atividade relevante ao clube?</label>
             <div>
                 <input type="radio" id="engajamento_sim" name="engajamento">
@@ -131,8 +134,15 @@
                 <label for="layout_nao">Não, vai ser minha primeira experiência</label>
             </div>
 
-            <label for="msg">Por quais motivos você quer fazer parte do clube?</label><br>
+            <label for="msg">Se sua resposta anterior foi sim, nos conte mais sobre essas atividades:</label><br>
 	        <textarea id="msg" name="msg" rows="4" cols="50"></textarea>
+
+            <label for="msg2">Por quais motivos você quer fazer parte do clube?</label><br>
+	        <textarea id="msg" name="msg2" rows="4" cols="50"></textarea>
+
+            <div>
+                <input name= "enviar" type="submit" id="enviar">
+            </div>
 
             <output id="output">Inscrição Feita com sucesso!</output>
         </form>
