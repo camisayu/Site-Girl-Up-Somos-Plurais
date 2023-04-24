@@ -110,22 +110,31 @@
             <label for="nome">Nome</label>
             <input type="text" id="nome">
 
-            <label for="js">Precisa de JS?</label>
-            <input type="checkbox" id="js">
+            <label for="idade" id="label_idade">Idade</label>
+            <input type="number" id="idade" min="14" max="21" value="14">
 
-            <label for="layout">Precisa de Layout?</label>
+            <label for="lugar">Você tem diponibilidade para participar dos nossos encontros na capital de São Paulo?</label>
             <div>
-                <input type="radio" id="layout_sim" name="layout">
-                <label for="layout_sim">Sim, preciso de layout</label>
+                <input name= "lugar" type="checkbox" id="lugar">
+                <label for="lugar_sim">Sim, tenho disponibilidade</label>
 
-                <input type="radio" id="layout_nao" name="layout">
-                <label for="layout_nao">Não, já tenho</label>
+                <input name= "lugar" type="checkbox" id="lugar">
+                <label for="lugar_não">Não, infelizmente não tenho disponibilidade</label>
             </div>
 
-            <label for="prazo" id="label_prazo">Prazo</label>
-            <input type="range" id="prazo" min="1" max="10">
+            <label for="engajamento">Você ja participou de alguma atividade relevante ao clube?</label>
+            <div>
+                <input type="radio" id="engajamento_sim" name="engajamento">
+                <label for="layout_sim">Sim, ja participei de eventos, ONG's ou outras ações sociais</label>
 
-            <output id="output">R$ 100,00</output>
+                <input type="radio" id="engajamento_nao" name="engajamento">
+                <label for="layout_nao">Não, vai ser minha primeira experiência</label>
+            </div>
+
+            <label for="msg">Por quais motivos você quer fazer parte do clube?</label><br>
+	        <textarea id="msg" name="msg" rows="4" cols="50"></textarea>
+
+            <output id="output">Inscrição Feita com sucesso!</output>
         </form>
     </section>
 

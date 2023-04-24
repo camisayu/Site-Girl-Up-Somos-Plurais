@@ -54,7 +54,7 @@ body{
     width: 20rem;
     position: fixed;
     right: -20rem;
-    background-image: linear-gradient(112.9deg, #BA9FDD 0%, #7FC1EB 0%);
+    background-image: linear-gradient(112.9deg, #BA9FDD 0%, #7FC1EB 100%);
     z-index: 9;
     transition: right 1s;
     font-size: 1.8rem;
