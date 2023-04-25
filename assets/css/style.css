@@ -98,7 +98,8 @@ header{
 }
 
 h1, 
-h2, 
+h2,
+output, 
 h3 {
     font-family: var(--font-heading);
     font-weight: 900;   
@@ -271,11 +272,12 @@ input[type=number]{
 }
 
 output {
-    display: block;
-    margin-top: 30px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #854FC9;
+    display: flex;
+    text-align: center;
+    padding: 0rem 0rem 0rem 25rem;
+    font-size: 36px;
+    color: var(--color-secundary);
+    margin-bottom: 1rem;
   }
 
 @media (max-width: 900px) {
