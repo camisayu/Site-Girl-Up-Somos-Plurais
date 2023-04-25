@@ -40,8 +40,6 @@ body{
     width: 9rem;
 }
 
-
-
 .linha{
     height: .5rem;
     width: 100%;
@@ -80,8 +78,6 @@ body{
 .menu li{
     list-style: none;
 }
-
-
 
 .show-menu{
     right: 0;
@@ -122,6 +118,14 @@ p{
     font-size: 3rem;
     color: var(--color-default);
 }
+
+#txtbanner h1{
+    display: flex;
+    text-align: center;
+    font-size: 36px;
+    color: var(--color-secundary);
+}
+
 
 .botao{
     padding: 1.2rem 6rem;
@@ -265,6 +269,14 @@ input[type=number]{
     border: none;
     border-radius: .3rem;
 }
+
+output {
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #854FC9;
+  }
 
 @media (max-width: 900px) {
     #secao-projetos ul{
